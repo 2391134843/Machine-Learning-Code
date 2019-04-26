@@ -3,7 +3,7 @@ import paddle.fluid as fluid
 import paddle
 import numpy as np
 import os
-
+    
 #  从paddle接口中获取房价数据训练集
 train_reader = paddle.batch(
     paddle.reader.shuffle(paddle.dataset.uci_housing.train(), #获取uci_housing训练数据
